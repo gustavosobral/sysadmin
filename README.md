@@ -19,6 +19,9 @@ $ iptables -I input [line-number] <INPUT -p tcp -m tcp --dport 80 -j ACCEPT>
 $ iptables -D <INPUT -i lo -j ACCEPT>
 ```
 
+My basic Iptables configuration:
+![Iptables](assets/iptables.png)
+
 ## Users and groups
 Basic commands to handle user attributes (Passsword, groups, etc):
 
