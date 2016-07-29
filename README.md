@@ -19,7 +19,10 @@ $ iptables -I input [line-number] <INPUT -p tcp -m tcp --dport 80 -j ACCEPT>
 $ iptables -D <INPUT -i lo -j ACCEPT>
 ```
 
-My basic Iptables configuration:
+To persist the Iptables modified rules, I use `iptables-persistent` utilitary. After change a rule, just exec `invoke-rc.d iptables-persistent save` to save modifications.
+
+My common Iptables configuration:
+
 ![Iptables](assets/iptables.png)
 
 ## Users and groups
@@ -39,7 +42,7 @@ $ lastlog
 ```
 
 ## Tools
-Useful tools.
+Useful tools
 
 * vim - Text editor
 * htop - Interactive process viewer
