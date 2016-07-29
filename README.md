@@ -15,7 +15,7 @@ Commands to list, add and remove rules on Iptables program.
 ```
 $ iptables -S
 $ iptables -nL --line-numbers
-$ iptables -I input [line-number] <INPUT -p tcp -m tcp --dport 80 -j ACCEPT>
+$ iptables -I <INPUT [line-number] -p tcp -m tcp --dport 80 -j ACCEPT>
 $ iptables -D <INPUT -i lo -j ACCEPT>
 ```
 
