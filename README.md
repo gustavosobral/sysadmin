@@ -29,9 +29,10 @@ My common Iptables configuration:
 Basic commands to handle user attributes (Passsword, groups, etc):
 
 ```
-$ useradd <username>
+$ useradd --create-home --user-group --system <username>
 $ passwd <username>
 $ adduser <username> <group>
+$ deluser <username>
 ```
 
 Auditing commands: 
