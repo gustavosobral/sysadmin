@@ -28,7 +28,7 @@ My common Iptables configuration:
 ## Netstat
 Print network connections
 
-List tcp connections (t), without resolving ip addresses (n) and showing the process pid (p)
+List tcp connections (t), without resolving ip addresses (n) and showing the process pid (p). To show root processes run as `root`.
 ```
 $ netstat -tnp
 ```
