@@ -30,7 +30,7 @@ Print network connections
 
 List tcp connections (t), without resolving ip addresses (n) and showing the process pid (p)
 ```
-# netstat -tnp
+$ netstat -tnp
 ```
 
 ![Netstat](assets/netstat.png)
@@ -39,7 +39,7 @@ List tcp connections (t), without resolving ip addresses (n) and showing the pro
 
 Filter by port
 ```
-# netstat -tnp | grep :80
+$ netstat -tnp | grep :80
 ```
 
 ## Users and groups
