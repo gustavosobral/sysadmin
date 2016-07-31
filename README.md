@@ -25,6 +25,23 @@ My common Iptables configuration:
 
 ![Iptables](assets/iptables.png)
 
+## Netstat
+Print network connections
+
+List tcp connections (t), without resolving ip addresses (n) and showing the process pid (p)
+```
+$ netstat -tnp
+```
+
+![Netstat](assets/netstat.png)
+
+* Useful tips:
+
+Filter by port
+```
+$ netstat -tnp | grep :80
+```
+
 ## Users and groups
 Basic commands to handle user attributes (Passsword, groups, etc):
 
@@ -36,7 +53,7 @@ $ passwd <username>
 $ deluser <username>
 ```
 
-Auditing commands: 
+Auditing commands:
 ```
 $ w
 $ last
