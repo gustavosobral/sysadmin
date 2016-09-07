@@ -99,3 +99,6 @@ Useful tools
 
 * vim - Text editor
 * htop - Interactive process viewer
+
+## References
+* [Top 30 nmap commands](http://www.cyberciti.biz/networking/nmap-command-examples-tutorials/)
