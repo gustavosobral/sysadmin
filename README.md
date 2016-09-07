@@ -42,6 +42,40 @@ Filter by port
 $ netstat -tnp | grep :80
 ```
 
+## nmap
+Network mapping. Scan hosts or IP address. Along with many purposes, `nmap` can be used to scan open ports in a remote host.
+
+Scan a host or IP address. Use `-6` to scan an IPv6 address
+```
+$ nmap [-6] host_or_address
+```
+
+Scan multiple IP address or subnet (IPv4)
+```
+$ nmap 192.168.1.1 192.168.1.2 192.168.1.3
+## works with same subnet i.e. 192.168.1.0/24
+$ nmap 192.168.1.1,2,3
+```
+IPv6 could take years to scan a normal subnet /64. Use with caution.
+
+Scan IPs from a file
+```
+$ nmap -iL /tmp/address_list.txt
+```
+
+Turn on OS detection
+```
+# IPv4
+$ nmap -A 192.168.1.1
+# IPv6
+$ nmap -A -6 ::1
+```
+
+Scan a host for UDP services (UDP scan)
+```
+$ nmap -sU 192.168.1.1
+```
+
 ## Users and groups
 Basic commands to handle user attributes (Passsword, groups, etc):
 
