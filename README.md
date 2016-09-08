@@ -3,13 +3,13 @@ Useful commands and scripts for sysadmin basic tasks.
 
 Optional line arguments are surronded by square brackets [], and example arguments are surrondend by <>.
 
-## SSH
+### SSH
 Configuration file `/etc/ssh/sshd_config`
 
 * 'Port' - Default SSH port (Change)
 * 'PermitRootLogin' - Root login allowed ways (Change from 'yes' to 'without-password' to only allow root connection with public key authentication)
 
-## Firewall
+### Firewall
 Commands to list, add and remove rules on Iptables program.
 
 ```
@@ -25,7 +25,7 @@ My common Iptables configuration:
 
 ![Iptables](assets/iptables.png)
 
-## Netstat
+### Netstat
 Print network connections
 
 List tcp connections (t), without resolving ip addresses (n) and showing the process pid (p). To show the process pid (p) you may need to run as `root`.
@@ -42,7 +42,7 @@ Filter by port
 $ netstat -tnp | grep :80
 ```
 
-## nmap
+### Nmap
 Network mapping. Scan hosts or IP address. Along with many purposes, `nmap` can be used to scan open ports in a remote host.
 
 Scan a host or IP address. Use `-6` to scan an IPv6 address
@@ -76,7 +76,7 @@ Scan a host for UDP services (UDP scan)
 $ nmap -sU 192.168.1.1
 ```
 
-## Users and groups
+### Users and groups
 Basic commands to handle user attributes (Passsword, groups, etc):
 
 ```
@@ -94,11 +94,15 @@ $ last
 $ lastlog
 ```
 
-## Tools
+### Tools
 Useful tools
 
 * vim - Text editor
 * htop - Interactive process viewer
 
-## References
-* [Top 30 nmap commands](http://www.cyberciti.biz/networking/nmap-command-examples-tutorials/)
+## References and useful links
+* [Initial Server Setup with Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)
+* [How To Set Up a Firewall Using Iptables on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-14-04)
+* [Linux Create User Account](http://www.cyberciti.biz/faq/howto-add-new-linux-user-account/)
+* [Top 30 Nmap Command Examples For Sys/Network Admins](http://www.cyberciti.biz/networking/nmap-command-examples-tutorials/)
+* [7 Security Measures to Protect Your Servers](https://www.digitalocean.com/community/tutorials/7-security-measures-to-protect-your-servers)
