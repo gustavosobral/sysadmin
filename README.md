@@ -3,11 +3,15 @@ Useful commands and scripts for sysadmin basic tasks.
 
 Optional line arguments are surronded by square brackets [], and example arguments are surrondend by <>.
 
+---
+
 ### SSH
 Configuration file `/etc/ssh/sshd_config`
 
 * 'Port' - Default SSH port (Change)
 * 'PermitRootLogin' - Root login allowed ways (Change from 'yes' to 'without-password' to only allow root connection with public key authentication)
+
+---
 
 ### Firewall
 Commands to list, add and remove rules on Iptables program.
@@ -25,6 +29,8 @@ My common Iptables configuration:
 
 ![Iptables](assets/iptables.png)
 
+---
+
 ### Netstat
 Print network connections
 
@@ -41,6 +47,8 @@ Filter by port
 ```
 $ netstat -tnp | grep :80
 ```
+
+---
 
 ### Nmap
 Network mapping. Scan hosts or IP address. Along with many purposes, `nmap` can be used to scan open ports in a remote host.
@@ -76,6 +84,8 @@ Scan a host for UDP services (UDP scan)
 $ nmap -sU 192.168.1.1
 ```
 
+---
+
 ### Users and groups
 Basic commands to handle user attributes (Passsword, groups, etc):
 
@@ -94,11 +104,15 @@ $ last
 $ lastlog
 ```
 
+---
+
 ### Tools
 Useful tools
 
 * vim - Text editor
 * htop - Interactive process viewer
+
+---
 
 ## References and useful links
 * [Initial Server Setup with Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)
