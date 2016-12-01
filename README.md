@@ -86,6 +86,20 @@ $ nmap -sU 192.168.1.1
 
 ---
 
+### CPU and Mem usage of a process (ps)
+Get process stats
+
+```
+$ ps -aux | grep <proc-name>
+```
+
+Column order:
+```
+USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
+```
+
+---
+
 ### Users and groups
 Basic commands to handle user attributes (Passsword, groups, etc):
 
