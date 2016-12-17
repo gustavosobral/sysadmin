@@ -120,6 +120,16 @@ $ lastlog
 
 ---
 
+### Services
+Commands for listing system services:
+
+```
+$ service --status-all
+$ initctl list
+```
+
+---
+
 ### Tools
 Useful tools
 
