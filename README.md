@@ -115,6 +115,7 @@ Auditing commands:
 ```
 $ w
 $ last
+$ last -f /var/log/wtmp.1 (ls /var/log/wtmp*)
 $ lastlog
 ```
 
