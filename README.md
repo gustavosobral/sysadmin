@@ -119,6 +119,14 @@ $ last -f /var/log/wtmp.1 (ls /var/log/wtmp*)
 $ lastlog
 ```
 
+List which user/process has opened a specific file
+
+```
+$ lsof /var/log/syslog
+```
+
+Run as `root` to show process owned by root.
+
 ---
 
 ### Services
