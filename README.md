@@ -31,6 +31,45 @@ My common Iptables configuration:
 
 ---
 
+### cURL
+Command-line tool for transferring data using various protocols
+
+#### Measuring request response time
+- Create `curl-format.txt` file:
+```
+    time_namelookup:  %{time_namelookup}\n
+       time_connect:  %{time_connect}\n
+    time_appconnect:  %{time_appconnect}\n
+   time_pretransfer:  %{time_pretransfer}\n
+      time_redirect:  %{time_redirect}\n
+ time_starttransfer:  %{time_starttransfer}\n
+                    ----------\n
+         time_total:  %{time_total}\n
+```
+
+- Make the request:
+```
+curl -w "@curl-format.txt" -o /dev/null -s "http://wordpress.com/"
+```
+
+#### SOAP requests
+- Create `body_request` file:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wse="NameSpace">
+  <soapenv:Header/>
+  <soapenv:Body>
+    ...
+  </soapenv:Body>
+</soapenv:Envelope>
+```
+
+- Make the request:
+```
+$ curl -X POST -H "Content-Type: text/xml" -H "SOAPAction: MYSoapAction" --data-binary @body_request.xml https://my.server.com/Path
+```
+---
+
 ### Netstat
 Print network connections
 
